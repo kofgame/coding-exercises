@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="fib-calc-perf-tester" />
+        <module name="elyland-javatest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="fib-calc-perf-tester" target="1.8" />
+      <module name="elyland-javatest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

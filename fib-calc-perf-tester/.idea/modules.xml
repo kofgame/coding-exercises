@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/fib-calc-perf-tester.iml" filepath="$PROJECT_DIR$/.idea/fib-calc-perf-tester.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fib-calc-perf-tester.iml" filepath="$PROJECT_DIR$/fib-calc-perf-tester.iml" />
     </modules>
   </component>
 </project>
