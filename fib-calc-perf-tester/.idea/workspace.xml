@@ -2,31 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64bc6f43-4538-4978-a643-c78a1da40b84" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbutils_commons_dbutils_1_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ojdbc_ojdbc_14.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cachemap/CacheMap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cachemap/CacheMapImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cachemap/CacheMap_UnitTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cachemap/Clock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/config.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/refactor/dao/AbstractDao$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/refactor/dao/AbstractDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/refactor/dao/AddressDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/refactor/exception/DaoException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/refactor/model/Person.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/refactor/model/PhoneNumber.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/refactor/service/AddressBook$Checker.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/refactor/service/AddressBook.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/elyland-javatest-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/refactor/service/AddressBookTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cachemap/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../cachemap/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fib-calc-perf-tester.iml" afterPath="$PROJECT_DIR$/fib-calc-perf-tester.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/.idea/libraries/Maven__com_google_guava_guava_annotations_r03.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/.idea/libraries/Maven__com_google_guava_guava_base_r03.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/.idea/libraries/Maven__com_google_guava_guava_collections_r03.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/.idea/libraries/Maven__com_google_guava_guava_primitives_r03.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/cachemap.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/readme.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/src/main/java/cachemap/CacheMap.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/src/main/java/cachemap/CacheMapImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/src/main/java/cachemap/Clock.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/src/test/java/cachemap/CacheMap_UnitTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/cachemap/CacheMap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/cachemap/CacheMapImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/cachemap/CacheMap_UnitTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/cachemap/Clock.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/config.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/refactor/dao/AbstractDao$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/refactor/dao/AbstractDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/refactor/dao/AddressDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/refactor/exception/DaoException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/refactor/model/Person.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/refactor/model/PhoneNumber.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/refactor/service/AddressBook$Checker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/refactor/service/AddressBook.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/threading/FibCalc.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/threading/FibCalcImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/threading/FibConsoleCalculator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/threading/PerformanceTestResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/threading/PerformanceTester.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/threading/PerformanceTesterImpl$FibCalcRunner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/classes/threading/PerformanceTesterImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/elyland-javatest-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/test-classes/cachemap/CacheMap_UnitTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/test-classes/refactor/service/AddressBookTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../cachemap/target/test-classes/threading/PerformanceTesterImplTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_annotations_r03.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_base_r03.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_collections_r03.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_primitives_r03.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_9_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/threading/FibCalc.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/threading/FibCalcImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/threading/FibConsoleCalculator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/threading/PerformanceTestResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/threading/PerformanceTester.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/threading/PerformanceTesterImpl$FibCalcRunner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/threading/PerformanceTesterImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/threading/PerformanceTesterImplTest.class" afterPath="" />
     </list>
     <ignored path="fib-calc-perf-tester.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -423,32 +466,18 @@
   <component name="SvnConfiguration">
     <configuration />
   </component>
-  <component name="TestHistory">
-    <history-entry file="PerformanceTesterImplTest - 2017.07.27 at 01h 28m 17s.xml">
-      <configuration name="PerformanceTesterImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PerformanceTesterImplTest - 2017.07.27 at 01h 49m 38s.xml">
-      <configuration name="PerformanceTesterImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PerformanceTesterImplTest - 2017.07.27 at 01h 50m 40s.xml">
-      <configuration name="PerformanceTesterImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PerformanceTesterImplTest - 2017.07.27 at 01h 51m 09s.xml">
-      <configuration name="PerformanceTesterImplTest" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26307365" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19370331" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36232656" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2145144" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -463,14 +492,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
