@@ -22,11 +22,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="cachemap" />
         <module name="elyland-javatest" />
+        <module name="fib-calc-perf-tester" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cachemap" target="1.8" />
       <module name="elyland-javatest" target="1.8" />
+      <module name="fib-calc-perf-tester" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
