@@ -1,7 +1,7 @@
 package threading;
 
 /**
- * Stores the result of a performance test.
+ * Dto for Fibonacci calculation performance test results.
  * All values are in milliseconds.
  */
 public class PerformanceTestResult {
@@ -32,5 +32,13 @@ public class PerformanceTestResult {
 	public long getTotalTime() {
 		return totalTime;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "PerformanceTestResult {" +
+				"totalTime=" + totalTime +
+				", minTime=" + minTime +
+				", maxTime=" + maxTime +
+				'}';
+	}
 }

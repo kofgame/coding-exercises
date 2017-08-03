@@ -2,7 +2,8 @@ package threading;
 
 import org.junit.Test;
 
-import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeoutException;
 
 /**
  * Created by Andrey on 29.05.2017.
@@ -10,16 +11,12 @@ import java.util.concurrent.CountDownLatch;
 public class PerformanceTesterImplTest {
 
     @Test
-    public void runPerformanceTest() throws InterruptedException {
+    public void runPerformanceTest() throws InterruptedException, TimeoutException, ExecutionException {
+        int fibonacciCalcExecutionAmount = 100;
         int poolSize = 4;
-        int fibonacciCalcExecutionAmount = 10;
-        CountDownLatch latch = new CountDownLatch(Runtime.getRuntime().availableProcessors());
-        PerformanceTesterImpl perfTesterImpl = new PerformanceTesterImpl(latch);
 
-        perfTesterImpl.runPerformanceTest(
-                perfTesterImpl.new FibCalcRunner(12),
-                fibonacciCalcExecutionAmount,
-                poolSize);
+        PerformanceTesterImpl perfTesterImpl = new PerformanceTesterImpl();
+        perfTesterImpl.runPerformanceTest(1000, fibonacciCalcExecutionAmount, poolSize);
     }
 
 }

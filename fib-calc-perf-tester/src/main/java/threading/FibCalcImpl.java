@@ -1,7 +1,7 @@
 package threading;
 
 /**
- * Created by Andrey on 29.05.2017.
+ * Created by Andrey on 30.05.2017.
  */
 public class FibCalcImpl implements FibCalc {
 

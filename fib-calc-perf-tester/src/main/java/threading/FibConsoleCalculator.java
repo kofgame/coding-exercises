@@ -16,12 +16,10 @@ public class FibConsoleCalculator {
         for(int i = 0; i < 3; i++) {
             userInputs[i] = scanner.nextInt();
         }
-
-        CountDownLatch latch = new CountDownLatch(Runtime.getRuntime().availableProcessors());
-        PerformanceTesterImpl perfTesterImpl = new PerformanceTesterImpl(latch);
+        PerformanceTesterImpl perfTesterImpl = new PerformanceTesterImpl();
 
         perfTesterImpl.runPerformanceTest(
-                perfTesterImpl.new FibCalcRunner(userInputs[0]),
+                userInputs[0],  // sumFibNumbersUpto
                 userInputs[1],  // calculationCount
                 userInputs[2]); // threadPoolSize
 

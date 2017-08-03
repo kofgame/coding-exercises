@@ -2,45 +2,53 @@ package threading;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
-
-import static java.lang.Thread.currentThread;
+import java.util.concurrent.*;
 
 
 /**
- * Created by Andrey on 29.05.2017.
+ * Created by Andrey for fun
  */
 public class PerformanceTesterImpl implements PerformanceTester {
+    // latch is absolutely redundant here, it's here for just to play with
     private CountDownLatch latch;
 
-    public PerformanceTesterImpl(CountDownLatch latch) {
-        this.latch = latch;
-    }
-
     @Override
-    public PerformanceTestResult runPerformanceTest(Runnable task, int executionCount, int threadPoolSize) throws InterruptedException {
+    public PerformanceTestResult runPerformanceTest(int sumFibNumbersUpto, int executionCount, int threadPoolSize) throws InterruptedException {
+        System.out.println("<--- Calculating Fib Numbers upto " + sumFibNumbersUpto +
+                ", number of executions / tasks for each fibUptoNumber " + executionCount + " ---> \n");
+        latch = new CountDownLatch(executionCount);
+
         long testStart = System.currentTimeMillis();
-        List<Long> fibCalcDurations = new ArrayList<>(executionCount);
+        List<Long> calcDurations = new ArrayList<>(executionCount);
+        ExecutorService executor = Executors.newFixedThreadPool(threadPoolSize);
         for (int i = 0; i < executionCount; i++) {
-            long fibCalcExecutionStart = System.currentTimeMillis();
-            ExecutorService executor = Executors.newFixedThreadPool(threadPoolSize);
-            executor.execute(task);
-            executor.shutdown();
-            executor.awaitTermination(5, TimeUnit.MINUTES);
-            fibCalcDurations.add(System.currentTimeMillis() - fibCalcExecutionStart);
+            long calcExecutionStart = System.currentTimeMillis();
+            Callable<Long> task = new FibCalcRunner(sumFibNumbersUpto);
+            Future<Long> result = executor.submit(task);
+            Long particularCalcDuration = null;
+            try {
+                Long calcResult = result.get(3, TimeUnit.SECONDS);
+                particularCalcDuration = System.currentTimeMillis() - calcExecutionStart;
+                System.out.println(" " + i + "-th calc iteration took " + particularCalcDuration + " MILLIS");
+            } catch (ExecutionException | TimeoutException e) {
+                System.err.println(e.getStackTrace());
+            }
+            calcDurations.add(particularCalcDuration);
+            latch.countDown();
         }
-//        latch.await();
+        executor.shutdown();
+        executor.awaitTermination(5, TimeUnit.MINUTES);
+
         long totalDuration = System.currentTimeMillis() - testStart;
-        long minDuration = fibCalcDurations.stream().mapToLong(n -> n).min().getAsLong();
-        long maxDuration = fibCalcDurations.stream().mapToLong(m -> m).max().getAsLong();
-        System.out.println("totalTime: "+ totalDuration + ", minTime: " + minDuration + ", maxTime: " + maxDuration);
-        return new PerformanceTestResult(totalDuration, minDuration, maxDuration);
+        long minDuration = calcDurations.stream().mapToLong(n -> n).min().getAsLong();
+        long maxDuration = calcDurations.stream().mapToLong(m -> m).max().getAsLong();
+        PerformanceTestResult testResult = new PerformanceTestResult(totalDuration, minDuration, maxDuration);
+        latch.countDown();
+        System.out.println(testResult);
+        return testResult;
     }
 
-    class FibCalcRunner implements Runnable {
+    class FibCalcRunner implements Callable<Long> {
         private int countUpTo;
 
         public FibCalcRunner(int countUpTo) {
@@ -48,11 +56,10 @@ public class PerformanceTesterImpl implements PerformanceTester {
         }
 
         @Override
-        public void run() {
-            System.out.println(currentThread().getName() + " -> FibonacciNumber: " + new FibCalcImpl().fib(countUpTo));
-            latch.countDown();
-            // System.out.println("Latch count: " + latch.getCount());
+        public Long call() {
+            Long calcResult = new FibCalcImpl().fib(countUpTo);
+            System.out.print("In async Fib calculation, threadName: " + Thread.currentThread().getName() + " --> ");
+            return calcResult;
         }
     }
-
 }
