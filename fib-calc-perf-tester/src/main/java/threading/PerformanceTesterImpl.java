@@ -43,7 +43,7 @@ public class PerformanceTesterImpl implements PerformanceTester {
         long minDuration = calcDurations.stream().mapToLong(n -> n).min().getAsLong();
         long maxDuration = calcDurations.stream().mapToLong(m -> m).max().getAsLong();
         PerformanceTestResult testResult = new PerformanceTestResult(totalDuration, minDuration, maxDuration);
-        latch.countDown();
+        latch.await();
         System.out.println(testResult);
         return testResult;
     }
